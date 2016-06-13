@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <title>Contacts</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/kradle_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mailform.css"/>
+    <link rel="stylesheet" href="css/google-map.css"/>
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-7b969e1429dde03c9d62578819317424332f57dfcb3ad1d87121a1c0adad45a4.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-a374ef3210415f3524097c7ce3b5ff2d1d449c1b9fe8d551dddeda1ce6d5c80c.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-0996ced1a40a04be84d932b2c830830a2c87259cfb5c41c90ca7fee0c5979e9d.css" media="all" rel="stylesheet" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+
+    <!--[if lt IE 9]>
+    <html class="lt-ie9">
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src='js/device.min.js'></script>
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+
+</head>
+<body>
+
+<?php
+    // The value of the variable name is found
+    //echo "<h6>Hello " . $_GET["id"] . "</h6>";
+    $id = $_GET["id"];
+    //$id = 'hello';
+?>
+    
+
+<!--<div class="page" ng-controller="mainCtrl" data-something="hello">-->
+<div class="page" ng-controller="mainCtrl" data-something=<?php echo $id; ?>>
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header>
+        <div class="container">
+            <div id="stuck_container" class="stuck_container">
+                <nav class="nav">
+                    <ul class="sf-menu" data-type="navbar">
+                        <?php include_once("nav.html"); ?> 
+                    </ul>
+                </nav>
+            </div>
+            <div class="brand">
+                <h1 class="brand_name">Kradle Cake</h1>
+                <p class="brand_slogan">
+                    Let's have some sweets !
+                </p>
+
+                <!--
+                <h1 class="brand_name">
+                    <a href="./">Doughnut</a>
+                </h1>
+
+                <p class="brand_slogan">
+                    Your favorite morning fried confection
+                </p>
+                -->
+            </div>
+        </div>
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <section class="well10 well__ins2 center">
+            <div class="container">
+                <h2 class="brand_name">신규문의</h2>
+
+
+        <div class="container new-discussion-timeline experiment-repo-nav">
+        <div class="repository-content">
+
+            <div id="partial-discussion-header"
+                class="gh-header js-details-container js-socket-channel js-updatable-content pull request"
+                data-channel="tenant:1:pull_request:14649586"
+                data-url="/angular/angular.js/pull/7086/show_partial?partial=pull_requests%2Ftitle">
+
+                <div class="gh-header-show ">
+                    <div class="gh-header-actions">
+                    </div>
+                    <h1 class="gh-header-title">
+                        <span class="js-issue-title">안녕하세요. 환영합니다.</span>
+                    </h1>
+                </div>
+            </div>
+
+
+            <div class="timeline-comment-wrapper js-comment-container">
+                <a href="/mary-poppins"><img alt="@mary-poppins" class="timeline-comment-avatar" height="48" src="https://avatars0.githubusercontent.com/u/4871841?v=3&amp;s=96" width="48" /></a>
+                <div id="issuecomment-40194340"
+                    class="comment previewable-edit timeline-comment js-comment js-task-list-container  "
+                    data-body-version="c33d67775b8e3c25cd45fe89f963a678">
+
+                    <div class="timeline-comment-header ">
+                        <div class="timeline-comment-actions">
+                        </div>
+                        <div class="timeline-comment-header-text">
+                            <strong>
+                            <a href="/mary-poppins" class="author">mary-poppins</a> 
+                            </strong>
+                            commented
+                            <a href="#issuecomment-40194340" class="timestamp"><relative-time datetime="2014-04-11T11:33:50Z">Apr 11, 2014</relative-time></a>
+                        </div>
+                    </div>
+
+
+                    <div class="comment-content">
+                        <div class="edit-comment-hide">
+                            <div class="comment-body markdown-body markdown-format js-comment-body">
+                                <p>Thanks for the PR! Please check the items below to help us merge this faster. See the <a href="https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#contributing-to-angularjs">contributing docs</a> for more information.</p>
+
+                                <p>If you need to make changes to your pull request, you can update the commit with <code>git commit --amend</code>.<br>
+                                Then, update the pull request with <code>git push -f</code>.</p>
+                                <p>Thanks again for your help!</p>
+                            </div>
+                        </div>
+                    </div>
+{{test_string}}
+                    
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer class="ins_footer">
+        <div class="container">
+
+            <div class="brand">
+                <h2 class="brand_name">Kradle Cake</h2>            
+
+                <p class="brand_slogan copyright">
+                    ©
+                    <span id="copyright-year"></span>
+                    |
+                    <a href="index-5.html">Privacy Policy</a>
+                </p>
+
+                <!--
+                <h1 class="brand_name">
+                    <a href="./">Doughnut</a>
+                </h1>
+
+                <p class="brand_slogan copyright">
+                    ©
+                    <span id="copyright-year"></span>
+                    |
+                    <a href="index-5.html">Privacy Policy</a>
+                </p>
+                -->
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+
+
+    <script>
+    var app = angular.module('myApp', []);
+
+
+    app.controller('mainCtrl', function($scope, $attrs) {
+        $scope.test_string = $attrs.something + "tttt";
+        //$scope.test_string = "tttt";
+    });
+
+    </script>
+
+</body>
+</html>
